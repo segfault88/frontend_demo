@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@hey-api/client-fetch':
+        specifier: ^0.1.9
+        version: 0.1.9
       axios:
         specifier: ^1.7.2
         version: 1.7.2
@@ -420,6 +423,9 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@hey-api/client-fetch@0.1.9':
+    resolution: {integrity: sha512-dmtNx5Zx628eKn3qbKS7uSmHHqqLNXwjhlBJ3SsT1CWX/OVVHUtdlausZY3ppUXw9f/Vyr3p/cWZg7qIjjb4Lw==}
 
   '@hey-api/openapi-ts@0.48.3':
     resolution: {integrity: sha512-R53Nr4Gicz77icS+RiH0fwHa9A0uFPtzsjC8SBaGwtOel5ZyxeBbayWE6HhE789hp3dok9pegwWncwwOrr4WFA==}
@@ -2615,6 +2621,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@hey-api/client-fetch@0.1.9': {}
 
   '@hey-api/openapi-ts@0.48.3(typescript@5.4.5)':
     dependencies:

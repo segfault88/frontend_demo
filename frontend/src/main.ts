@@ -8,6 +8,12 @@ import axios from 'axios'
 import App from './App.vue'
 import router from './router'
 
+import { createClient } from '@hey-api/client-fetch'
+
+createClient({
+  baseUrl: 'http://localhost:8000'
+})
+
 const app = createApp(App)
 
 axios.defaults.baseURL = 'http://localhost:8000/'

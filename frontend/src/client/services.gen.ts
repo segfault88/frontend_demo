@@ -3,7 +3,7 @@
 import type { CancelablePromise } from './core/CancelablePromise';
 import { OpenAPI } from './core/OpenAPI';
 import { request as __request } from './core/request';
-import type { RootGetResponse } from './types.gen';
+import type { RootGetResponse, ItemsItemsGetResponse } from './types.gen';
 
 /**
  * Root
@@ -13,4 +13,14 @@ import type { RootGetResponse } from './types.gen';
 export const rootGet = (): CancelablePromise<RootGetResponse> => { return __request(OpenAPI, {
     method: 'GET',
     url: '/'
+}); };
+
+/**
+ * Items
+ * @returns Item Successful Response
+ * @throws ApiError
+ */
+export const itemsItemsGet = (): CancelablePromise<ItemsItemsGetResponse> => { return __request(OpenAPI, {
+    method: 'GET',
+    url: '/items'
 }); };

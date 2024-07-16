@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PingView from '../views/PingView.vue'
+import ItemsView from '../views/ItemsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/ping',
       name: 'ping',
       component: PingView
+    },
+    {
+      path: '/items',
+      name: 'items',
+      component: ItemsView
     }
   ]
 })
