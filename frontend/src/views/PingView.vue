@@ -14,17 +14,17 @@
 }
 </style>
 
-<script>
+<script lang="ts">
 import axios from 'axios'
 
-export default {
+export default class PingView {
   data() {
     return {
       message: '...'
     }
   },
   async created() {
-    const response = await axios.get('http://localhost:8000/')
+    const response = await axios.get('/')
     this.message = response.data.message
   }
 }
