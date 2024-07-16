@@ -22,7 +22,11 @@
 <script lang="ts">
 import { itemsItemsGet } from '../client/services.gen'
 
-//   import axios from 'axios'
+import { createClient } from '@hey-api/client-fetch'
+
+let client = createClient({
+  baseUrl: 'http://localhost:8000'
+})
 
 export default {
   data() {
