@@ -17,7 +17,7 @@
 <script lang="ts">
 import axios from 'axios'
 
-export default class PingView {
+export default {
   data() {
     return {
       message: '...'

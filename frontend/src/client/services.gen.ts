@@ -7,7 +7,7 @@ import type { RootGetResponse } from './types.gen';
 
 /**
  * Root
- * @returns string Successful Response
+ * @returns unknown Successful Response
  * @throws ApiError
  */
 export const rootGet = (): CancelablePromise<RootGetResponse> => { return __request(OpenAPI, {
